@@ -1,0 +1,32 @@
+{
+  "name": "webpack_require_ensure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --inline --progress --colors --watch --compress --content-base ./dist --port 8087 --host 0.0.0.0",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadow-Fiend/webpack_require_ensure.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shadow-Fiend/webpack_require_ensure/issues"
+  },
+  "homepage": "https://github.com/shadow-Fiend/webpack_require_ensure#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
+}

@@ -1,5 +1,7 @@
 require.ensure(dependencies: String[], callback: function(require), errorCallback: function(error), chunkName: String)
+
 [官方介绍 webpack medule methods require.ensure](https://www.webpackjs.com/api/module-methods/#require-ensure)
+
 [github实例 webpack_require_ensure](https://github.com/shadow-Fiend/webpack_require_ensure)
 
 ---
@@ -31,6 +33,7 @@ funBtn.click(() => {
 ```
 
 require.ensure 这个函数是一个代码分离的分割线，表示回调里面的 require 是我们想要分割出去的，即 require('./test.js')，把 test.js 分割出去形成一个 webpack 打包的单独 js 文件，当然 ensure 里面也是可以写一些同步的 require 示例如下：
+
 ```
 var test1 = require('./test1.js')
 
@@ -41,6 +44,9 @@ funBtn.click(() => {
 	})
 })
 ```
+
 - github 实例 
+
 1.代码 clone 下来之后可以 build 出来双击 dist 里面的 index.html 
+
 2.也可以 start 跑起来在本地 localhost:8087 看文件加载顺序
